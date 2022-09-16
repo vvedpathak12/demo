@@ -1,0 +1,12 @@
+
+I/P : Vedpathak Vaibhav is name my
+O/P : my name is Vaibhav Vedapathak
+
+
+var ip = I/P.split(' ')
+
+var op = ip.reverse().join(' ');
+console.log(op);
+
+
+function 

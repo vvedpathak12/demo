@@ -1,0 +1,104 @@
+
+<h1 style="background-color: aqua;">Directives :-</h1>
+<h4>Directives are responsible for adding and removing the elements from DOM as well as changing the behaviour of DOM</h4>
+
+<h2>**Structural Derivatives :-</h2>
+
+<h3>*ngIf loop :- </h3><br>
+<div *ngIf = "age >= 18">
+    <h2>1.ngIf :-</h2>
+    <h3> True condition :- If candidates age is {{age}} they are eligible for voting.</h3>
+</div><br>
+
+<div *ngIf = "(age1 >= 18) && showData">
+    <h2>2.ngIf :-</h2>
+    <h3> AND boolean true condition :- If candidates age is {{age1}} they are eligible for voting.</h3>
+</div><br>
+
+<div *ngIf = "(age2 <= 18) || showData1">
+    <h2>3.ngIf :-</h2>
+    <h3> OR boolean false condition :- If candidates age is {{age2}} they are eligible for voting.</h3>
+</div><br>
+
+<h3>*ngFor loop :-</h3><br>
+
+<select>
+    <option *ngFor = "let name of streams">{{name}}</option>
+</select>
+<br><br>
+
+
+<h3>*ngSwitchCase :- </h3>
+
+<div [ngSwitch] = "num">
+
+<div *ngSwitchCase = "0">sunday</div>
+<div *ngSwitchCase = "1">monday</div>
+<div *ngSwitchCase = "2">tuesday</div>
+<div *ngSwitchCase = "3">wednesday</div>
+<div *ngSwitchCase = "4">thursday</div>
+<div *ngSwitchCase = "5">friday</div>
+<div *ngSwitchCase = "6">saturday</div>
+
+<div *ngSwitchDefault>Default</div>
+</div>
+<br>
+<div [ngSwitch] = "fruits">
+
+    <div *ngSwitchCase = "'mango'">mango</div>
+    <div *ngSwitchCase = "'banana'">banana</div>
+    <div *ngSwitchCase = "'pineapple'">pineapple</div>
+    <div *ngSwitchCase = "'guava'">guava</div>
+    <div *ngSwitchCase = "'chikoo'">chikoo</div>
+    
+    <div *ngSwitchDefault>Default</div>
+</div>
+
+<h2>**Attribute Derivatives :-</h2>
+<h4>Directives which are responsible for changing the behaviour of the DOM is called as attribute directives.<br>
+There are two types:- 1.ngClass and 2.ngStyle.</h4><br><br>
+
+<div class="test1">
+    <p>This is Attribute Directive</p>
+</div><br><br>
+
+<h2>**[ngClass] :-</h2>
+<div [ngClass]="myClass2">
+    <p>This is ngclass Attribute Directive</p>
+</div><br>
+
+<h2>**[ngClass] ifelse :-</h2>
+
+<div [ngClass]="myClass3">
+    <p>This is ngclass Attribute Directive with ifelse condition</p>
+</div><br>
+
+<h2>**[ngClass] ternery operator :-</h2>
+<div [ngClass]="result ? 'test1' : 'test3'">
+    <p>This is ngclass Attribute Directive with ternery operator</p>
+</div><br>
+
+
+<h2>**[ngStyle] :- Directly adding style</h2>
+<div [ngStyle]= "{'color' :'grey' , 'font-size' : '50px' , 'font-weight' : '800' , 'background-color' : 'gold' , 'border-radius' : '30px' ,'border' : '2px solid black' , 'padding' : '20px'}">
+    <p>This is ngStyle Attribute Directive with Directly adding style</p>
+</div><br>
+
+<h2>**[ngStyle] :- Adding style by using variable</h2>
+<div [ngStyle]= "myStyle">
+    <p>This is ngStyle Attribute Directive with Adding style by using variable</p>
+</div><br>
+
+
+
+<div appCustDir>
+    <h2>Custom Directives Example :-</h2>
+    <p>This is Custom Directives Implementation</p>
+</div><br>
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!-- <p>binding works!</p> -->
+
+
+<h2>Data Binding</h2><hr>
+
+<!-- Interpolation binding -->
+<h1 style="color: red;">Interpolation Operator/Binding :-</h1>  
+
+<h2>{{sampleString}}</h2>
+<hr>
+
+<!--  Attribute Binding -->
+<h1 style="color: red;">Property / Attribute Binding :-</h1>
+
+<button><a [href]="link" target="_blank">Go to YouTube</a></button>
+<hr>
+
+<img [src]="image" alt="" height="250px">
+<br><br>
+<img [src]="image1" alt="" height="250px">
+
+<!-- Event Binding -->
+
+<h1 style="color: red;">Event Binding :-</h1>
+
+<h3>click event :-</h3>
+<button (click)="showClick()">Show click Event</button>
+
+<h3>alert event :-</h3>
+<button (click)="showAlert()">Show Alert</button>
+<hr>
+
+<!--  Two Way Data Binding -->
+<h1 style="color: red;">Two Way Data Binding :-</h1>
+
+Enter Your Name : <input type="text" name="FullName" [(ngModel)] = "FullName">
+<br><br>
+Your Name : {{FullName}}
+<br><br>
+
+
+Enter your branch : <input type="text" [(ngModel)]="Branch">
+<br><br>
+
+Your branch : {{Branch}};

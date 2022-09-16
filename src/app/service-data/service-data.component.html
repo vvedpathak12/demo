@@ -1,0 +1,86 @@
+<div class="container">
+
+    <h1 style="color: chocolate;">service-data works!</h1><br>
+
+    <div style="border: 3px solid black; padding: 20px;">
+        <h2 style="color: darkgoldenrod;">**Service :-<br><br></h2>
+
+        <h3 style="color: forestgreen;">
+
+            1.Service is basic building of angular. <br><br>
+            2.It is used to separate UI logic from business logic. (i.e. It is the bridge between UI logic from business logic.)<br><br>
+            3.Service is a simple class with methods and properties.<br><br>
+            4.It is also used for inter-component communication.<br><br>
+            5.Basically service is used with purpose of backend communication as well code reusability.<br><br>
+        </h3>
+
+
+        <h1 style="color: chocolate;">**Dependency Injection :-</h1><br>
+        <h3>It is a pattern of class coding in which class receives its dependencies externally rather than creating itself.</h3><br><br>
+
+
+        <h1 style="color: darkgoldenrod;">HTTP Client :- </h1><br><br>
+
+        <h3 style="color: forestgreen;">
+            1.HttpClient is a built in service used to communicate with backend.<br><br>
+            2.It is also used for sending the http request and get the response.<br><br>
+            3.We will get the reposonse of http request in terms of observable.<br><br>
+            4.It can have error handling capability.<br><br>
+            5.We can cancel the http request.<br><br>
+            6.Htpp provides us below methods :- <br><br>
+            <ul>get ----> Used to get the data from the backend.</ul>
+            <ul>post ----> Used to send as well get the data from backend.</ul>
+            <ul>put ----> Used to update the data.</ul>
+            <ul>delete---> Used to delete the data.</ul>
+            <ul>**post ---> This method can perform functionality of all above methods.</ul>
+        </h3>
+
+        <h1 style="color: chocolate;">**Observables :-</h1><br>
+        <h3>Observables are asynchronous or parellal flow of execution which can handle multiple events at a time.</h3><br><br>
+
+
+    </div><br>
+
+    <table class="table table-responsive border border-4 border-dark bg-warning">
+        <tr>
+            <th>Id</th>
+            <th>User Id</th>
+            <th>Title</th>
+            <th>Body</th>
+        </tr>
+
+        <tr *ngFor="let dt of allData">
+            <td>{{dt.id}}</td>
+            <td>{{dt.userId}}</td>
+            <td>{{dt.title}}</td>
+            <td>{{dt.body}}</td>
+        </tr>
+    </table>
+
+    <h1 style="color: darkcyan;"><b>USER DATA</b></h1>
+
+    <table class="table table-responsive table table-bordered alert alert-success">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Address</th>
+            <th>Company</th>
+            <th>Phone</th>
+            <th>Website</th>
+        </tr>
+
+        <tr *ngFor="let dt of userData">
+            <td>{{dt.id}}</td>
+            <td>{{dt.name}}</td>
+            <td>{{dt.email}}</td>
+            <td>{{dt.username}}</td>
+            <td>{{dt.address.city}} , {{dt.address.geo.lat}} , {{dt.address.geo.lng}} , {{dt.address.street}} , {{dt.address.suite}} , {{dt.address.zipcode}}</td>
+            <td>{{dt.company.bs}} , {{dt.company.catchPhrase}} , {{dt.company.name}}</td>
+            <td>{{dt.phone}}</td>
+            <td>{{dt.website}}</td>
+        </tr>
+    </table>
+
+</div>

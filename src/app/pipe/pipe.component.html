@@ -1,0 +1,102 @@
+<div class="container">
+
+    <h2 class="text-center text-white mt-2" style="border: 1px solid black; padding: 5px; background-color: tomato;">Angular Pipes</h2><br>
+
+    <h3>**Built in Pipes :-</h3> <br>
+
+    <h3 style="color: darkmagenta;"> 1. Uppercase :-</h3><br>
+
+    <h4>Original text :- {{test1}}</h4><br>
+    <h4 style="color: magenta;">*Uppercase text :- {{ test1 | uppercase }}</h4>
+    <h4 style="color: magenta;">*Lowercase text :- {{ test1 | lowercase }}</h4>
+    <h4 style="color: magenta;">*Titlecase text :- {{ test1 | titlecase }}</h4>
+    <hr>
+
+
+    <h3 style="color: darkmagenta;"> 2. Date :-</h3><br>
+
+    <h4 style="color: magenta;">*Original date :- {{ date }}</h4>
+    <h4 style="color: magenta;">*Standard format :- {{ date | date }}</h4>
+    <h4 style="color: magenta;">*Short date :- {{ date | date : "short" }}</h4>
+    <h4 style="color: magenta;">*Medium date :- {{ date | date : "medium" }}</h4>
+    <h4 style="color: magenta;">*Long date :- {{ date | date : "long" }}</h4>
+    <h4 style="color: magenta;">*Full date :- {{ date | date : "full" }}</h4>
+    <h4 style="color: magenta;">*Short date :- {{ date | date : "shortDate" }}</h4>
+    <h4 style="color: magenta;">*Medium date :- {{ date | date : "mediumDate" }}</h4>
+    <h4 style="color: magenta;">*Long date :- {{ date | date : "longDate" }}</h4>
+    <h4 style="color: magenta;">*Full date :- {{ date | date : "fullDate" }}</h4>
+    <h4 style="color: magenta;">*dd/mm/yyyy :- {{ date | date : "dd/MM/yyyy" }}</h4>
+    <h4 style="color: magenta;">*Short time :- {{ date | date : "shortTime" }}</h4>
+    <h4 style="color: magenta;">*Medium time :- {{ date | date : "mediumTime" }}</h4>
+    <h4 style="color: magenta;">*Long Time :- {{ date | date : "longTime" }}</h4>
+    <h4 style="color: magenta;">*Full Time :- {{ date | date : "fullTime" }}</h4>
+    
+    <br><hr>
+
+
+    <h3 style="color: darkmagenta;"> 3. Json :-</h3><br>
+
+    <h4 style="color: magenta;">Json pipe :- {{person | json}}</h4>
+    <h4 style="color: magenta;">Json pipe :- {{person.fname | json}}</h4>
+    <h4 style="color: magenta;">Json pipe :- {{person.lname | json}}</h4>
+    <h4 style="color: magenta;">Json pipe :- {{person.age | json}}</h4>
+
+    <br><hr>
+
+
+    <h3 style="color: darkmagenta;"> 4. Slice pipe :-</h3><br>
+
+    <h4>Original text :- {{test1}}</h4><br>
+    <h4 style="color: magenta;">*Uppercase text Slice :- {{ test1 | uppercase | slice : 0 :12 }}</h4>
+    <h4 style="color: magenta;">*Lowercase text  Slice :- {{ test1 | lowercase | slice : 3:6}}</h4>
+    <h4 style="color: magenta;">*Titlecase text  Slice :- {{ test1 | titlecase | slice : 0:10}}</h4>
+
+    <br><hr>
+
+
+    <h3 style="color: darkmagenta;"> 5. Currency pipe :-</h3><br>
+
+    <h4 style="color: magenta;">*India Rupee currency  :- {{ salary | currency : "INR" }}</h4>
+    <h4 style="color: magenta;">*United states doller currency :- {{ salary | currency : "USD" }}</h4>
+    <h4 style="color: magenta;">*Viet Nam Dong currency :- {{ salary | currency : "VND" }}</h4>
+    <h4 style="color: magenta;">*United Kingdom Pound currency :- {{ salary | currency : "GBP" }}</h4>
+    <h4 style="color: magenta;">*Japan Yen currency :- {{ salary | currency : "JPY" }}</h4>
+    <h4 style="color: magenta;">*Israel Shekel currency :- {{ salary | currency : "ILS" }}</h4>
+    <h4 style="color: magenta;">*Brazil Real currency :- {{ salary | currency : "BRL" }}</h4>
+
+    <br><hr>
+
+
+    <h3 style="color: darkmagenta;"> 6. Multiple pipes :-</h3><br>
+
+    <h4 style="color: magenta;">*Multiple pipes  :- {{ test2 | slice : 0:25 | uppercase }}</h4>
+
+    <br><hr>
+
+
+    <h3>**Custom pipes :-</h3> <br>
+
+    <!-- <h4>Original text :- {{salary}}</h4><br> -->
+
+    <!-- <h4 style="color: magenta;">custom pipe :- {{salary | custpipe : 10 }}</h4><br> -->
+
+    <!-- <h4>Original text :- {{test3}}</h4><br>
+
+    <h4 style="color: magenta;">*custom pipe :- {{test3 | custpipe }}</h4><br><br> -->
+
+
+    <!-- <h4>Original text :- {{test3}}</h4><br>
+
+    <h4 style="color: magenta;">*custom pipe :- {{test3 | custpipe }}</h4><br><br> -->
+
+    <!-- <h4>Original text :- {{test4}}</h4><br>
+
+    <h4 style="color: magenta;">*custom pipe :- {{test3 | custpipe }}</h4><br><br> -->
+
+
+<!-- Print full name by passing arguments -->
+
+    <h4 style="color: magenta;">*custom pipe :- {{"Sachin"| custpipe : "Ramesh" : "Tendulkar" : "hello"}}</h4><br><br>
+
+</div>
+

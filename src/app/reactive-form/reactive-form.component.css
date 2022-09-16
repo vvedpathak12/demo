@@ -1,0 +1,34 @@
+
+.form1{
+border: 2px solid black;
+border-radius: 5px;
+ padding: 10px 0px 20px 0px; 
+}
+
+/* .form2{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.form-wrap2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn1{
+    color: #1a73e8;
+    font-weight: 500;
+    letter-spacing: .25px;
+    text-align: left;
+}
+
+.anchor1{
+    text-align: start;
+    text-decoration: none;
+    color: #1a73e8 !important;
+} */
